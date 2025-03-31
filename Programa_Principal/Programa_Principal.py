@@ -1,3 +1,6 @@
+from menus import media
+
+
 def menu():
     while True:
         print("Bienvenido al programa donde vas a poder consultar distintas cosas acerca de tu semestre de la universidad en la UACH")
@@ -8,6 +11,8 @@ def menu():
         print("Opción 4: Cuanto te falta para aprobar el semestre, considerando la calificación mínima como 7")
         opcion= int("Selecciona la opción que deseas seleccionar hoy: ")
         match(opcion):
+           case(1):
+              media()
           
 
 
