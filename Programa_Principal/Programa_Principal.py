@@ -20,12 +20,14 @@ def menu():
     match(opcion):
       case(1):
         media()
-        continuar= input("\n¿Deseas hacer algo más? (s/n): ").lower()
-        if continuar in ["s", "si"]:
-           continue
-        else:
-          print("Gracias por usar el programa!!!")
-          break
+        while True:  #
+            continuar = input("\n¡Deseas hacer algo más? (s/n): ").lower().strip()
+            if continuar in ["s", "si", "n", "no"]:
+               break  
+            print("Por favor, ingresa 's' para continuar o 'n' para salir.")
+        if continuar in ["n", "no"]:  
+            print("Gracias por usar el programa!!!")
+            break
       case(2):
         asistencias()
         continuar= input("\n¿Deseas hacer algo más? (s/n): ").lower()
