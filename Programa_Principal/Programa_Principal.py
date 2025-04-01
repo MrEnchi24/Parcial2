@@ -9,7 +9,7 @@ def asistencias():
 
 def menu():
   while True:
-    print("\nBienvenido al programa donde vas a poder consultar distintas cosas acerca de tu semestre de la universidad en la UACH")
+    print("Bienvenido al programa donde vas a poder consultar distintas cosas acerca de tu semestre de la universidad en la UACH\n" ) 
     print("A continuación se muestran las opciones a las que puede acceder: ")
     print("Opcion 1: Promedio de tus calificaciones de todo el semestre:")
     print("Opicón 2: Tus asistencias a clases durante el semestre")
