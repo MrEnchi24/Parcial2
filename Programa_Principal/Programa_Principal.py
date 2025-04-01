@@ -21,8 +21,10 @@ def menu():
       case(1):
         media()
         continuar= input("\n¿Deseas hacer algo más? (s/n): ").lower()
-        if continuar != "s":
-          print("Gracias por usar el programa!!")
+        if continuar in ["s", "si"]:
+           continue
+        else:
+          print("Gracias por usar el programa!!!")
           break
       case(2):
         asistencias()
