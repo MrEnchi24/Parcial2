@@ -15,7 +15,8 @@ def menu():
     print("Opicón 2: Tus asistencias a clases durante el semestre")
     print("Opción 3: Riesgo que tienes de ser dado de bajo por tus No Acreditadas")
     print("Opción 4: Cuanto te falta para aprobar el semestre, considerando la calificación mínima como 7")
-    opcion= int(input("Selecciona la opción que deseas seleccionar hoy: "))
+    print("Opción 5: Salir")
+    opcion= int(input("Digita la opción que deseas seleccionar hoy: "))
     match(opcion):
       case(1):
         media()

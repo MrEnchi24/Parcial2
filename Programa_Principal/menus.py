@@ -7,7 +7,7 @@ def media():
             else:
                 print("La calificación debe estar entre 0 y 10")
         except ValueError:
-            print("Ingresa un valor válido")
+            print("Favor de ingresar un número")
     
     while True:
         try:
@@ -17,7 +17,7 @@ def media():
             else:
                 print("La calificación debe estar entre 0 y 10")
         except ValueError:
-            print("Ingresa un valor válido")
+            print("Favor de ingresar un número")
     
     while True:
         try:
@@ -27,7 +27,7 @@ def media():
             else:
                 print("La calificación debe estar entre 0 y 10")
         except ValueError:
-            print("Ingresa un valor válido")
+            print("Favor de ingresar un número")
     
     promedio = (calificacion_1 * .30) + (calificacion_2 * .30) + (calificacion_3 * .40)
     print("Tu promedio es de: ", promedio)
