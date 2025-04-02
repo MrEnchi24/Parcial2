@@ -1,10 +1,12 @@
 import sys
-sys.path.append("C:/Users/Usuario/Parcial2")  
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from Funcion_externa.funcion_secundaria import main
 from menus import media
+from FaltaPromedio import tP
 
 
-def asistencias():
+def reprobadas ():
    semestre= int(input("En que semestre estas actualmente:"))
    na= int(input("Cuantas materias no acreditadas tienes?: "))
   
@@ -25,7 +27,7 @@ def menu():
     match(opcion):
       case(1):
         media()
-        while True:  #
+        while True:  
             continuar = input("\n¡Deseas hacer algo más? (s/n): ").lower().strip()
             if continuar in ["s", "si", "n", "no"]:
                break  
@@ -35,12 +37,34 @@ def menu():
             break
       case(2):
         main()
-        continuar= input("\n¿Deseas hacer algo más? (s/n): ").lower()
-        if continuar != "s":
-          print("Gracias por usar el programa!!")
-          break
+        while True:  
+            continuar = input("\n¡Deseas hacer algo más? (s/n): ").lower().strip()
+            if continuar in ["s", "si", "n", "no"]:
+               break  
+            print("Por favor, ingresa 's' para continuar o 'n' para salir.")
+        if continuar in ["n", "no"]:  
+            print("Gracias por usar el programa!!!")
+            break
       case(3):
-          print("Hola")
+        reprobadas()
+        while True:  
+            continuar = input("\n¡Deseas hacer algo más? (s/n): ").lower().strip()
+            if continuar in ["s", "si", "n", "no"]:
+               break  
+            print("Por favor, ingresa 's' para continuar o 'n' para salir.")
+        if continuar in ["n", "no"]:  
+            print("Gracias por usar el programa!!!")
+            break
+      case(4):
+        tP()
+        while True:  
+          continuar = input("\n¡Deseas hacer algo más? (s/n): ").lower().strip()
+          if continuar in ["s", "si", "n", "no"]:
+             break  
+          print("Por favor, ingresa 's' para continuar o 'n' para salir.")
+        if continuar in ["n", "no"]:  
+            print("Gracias por usar el programa!!!")
+            break
 
 
 
