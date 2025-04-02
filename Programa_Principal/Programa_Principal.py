@@ -1,4 +1,5 @@
 from menus import media
+from Funcion_externa import main 
 def asistencias():
    semestre= int(input("En que semestre estas actualmente:"))
    na= int(input("Cuantas materias no acreditadas tienes?: "))
@@ -29,11 +30,13 @@ def menu():
             print("Gracias por usar el programa!!!")
             break
       case(2):
-        asistencias()
+        main()
         continuar= input("\n¿Deseas hacer algo más? (s/n): ").lower()
         if continuar != "s":
           print("Gracias por usar el programa!!")
           break
+      case(3):
+          
          
            
 
