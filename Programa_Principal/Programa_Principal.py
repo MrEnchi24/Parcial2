@@ -1,5 +1,9 @@
+import sys
+sys.path.append("C:/Users/Usuario/Parcial2")  
+from Funcion_externa.funcion_secundaria import main
 from menus import media
-from Funcion_externa import main 
+
+
 def asistencias():
    semestre= int(input("En que semestre estas actualmente:"))
    na= int(input("Cuantas materias no acreditadas tienes?: "))
@@ -36,13 +40,11 @@ def menu():
           print("Gracias por usar el programa!!")
           break
       case(3):
-          
-         
-           
+          print("Hola")
 
 
 
-        
+
 
 
 if __name__=="__main__":
