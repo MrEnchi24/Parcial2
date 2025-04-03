@@ -1,5 +1,6 @@
 import sys
 import os
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from Funcion_externa.funcion_secundaria import main
 from menus import media
@@ -8,10 +9,14 @@ def reprobadas():
     while True:
         try:
             semestre = int(input("¿Qué semestre cursas actualmente?: "))
-            if 0 <= semestre <= 11:
-                break
-            else:
-                print("No puedes estar en 11 semestre, se realista rey")
+            if  semestre > 11:    
+                print("No puedes estar en semestres más alto a 11 y eso que ya es mucho, se realista rey")
+                continue
+            if semestre<1:
+                print("No puedes tener semestres negativos")
+                continue
+            break
+        
         except ValueError:
             print("Ingresa una opción válida.")
             print("Ingresa un número válido para el semestre.")
@@ -132,3 +137,6 @@ def menu():
 
 if __name__=="__main__":
   menu()
+
+
+  
