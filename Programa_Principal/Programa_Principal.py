@@ -13,6 +13,7 @@ def reprobadas():
             else:
                 print("No puedes estar en 11 semestre, se realista rey")
         except ValueError:
+            print("Ingresa una opción válida.")
             print("Ingresa un número válido para el semestre.")
     
     while True:  
@@ -61,70 +62,73 @@ def reprobadas():
     else:
         print("No se pudo determinar un caso específico. Revisa tus datos.")
 def menu():
-  while True:
-    print("Bienvenido al programa donde vas a poder consultar distintas cosas acerca de tu semestre de la universidad en la UACH" ) 
-    print("A continuación se muestran las opciones a las que puede acceder: ")
-    print("Opcion 1: Promedio de tus calificaciones de todo el semestre:")
-    print("Opicón 2: Tus asistencias a clases durante el semestre")
-    print("Opción 3: Riesgo que tienes de ser dado de bajo por tus No Acreditadas")
-    print("Opción 4: Cuanto te falta para aprobar el semestre, considerando la calificación mínima como 7")
-    print("Opción 5: Salir")
-    opcion= int(input("Digita la opción que deseas seleccionar hoy: "))
-    match(opcion):
-      case(1):
-        media()
-        while True:  
-            continuar = input("\n¡Deseas hacer algo más? (s/n): ").lower().strip()
-            if continuar in ["s", "si", "n", "no"]:
-               break  
-            print("Por favor, ingresa 's' para continuar o 'n' para salir.")
-        if continuar in ["n", "no"]:  
-            print("Gracias por usar el programa!!!")
-            break
-      case(2):
-        main()
-        while True:  
-            continuar = input("\n¡Deseas hacer algo más? (s/n): ").lower().strip()
-            if continuar in ["s", "si", "n", "no"]:
-               break  
-            print("Por favor, ingresa 's' para continuar o 'n' para salir.")
-        if continuar in ["n", "no"]:  
-            print("Gracias por usar el programa!!!")
-            break
-      case(3):
-        reprobadas()
-        while True:  
-            continuar = input("\n¡Deseas hacer algo más? (s/n): ").lower().strip()
-            if continuar in ["s", "si", "n", "no"]:
-               break  
-            print("Por favor, ingresa 's' para continuar o 'n' para salir.")
-        if continuar in ["n", "no"]:  
-            print("Gracias por usar el programa!!!")
-            break
-      case(4):
-        tP()
-        while True:  
-          continuar = input("\n¡Deseas hacer algo más? (s/n): ").lower().strip()
-          if continuar in ["s", "si", "n", "no"]:
-             break  
-          print("Por favor, ingresa 's' para continuar o 'n' para salir.")
-        if continuar in ["n", "no"]:  
-            print("Gracias por usar el programa!!!")
-            break
-      case(5):
-        while True:
-          continuar= input("¿Estás seguro de que quieres salir????? (s/n): ").lower().strip()
-          if continuar in ["s", "si", "n", "no"]:
-             break
-          print("Por favor , ingresa 's' para continuar o 'n' para salir.")
-          if continuar in ["n", "no"]:
-             print("Gracias por usar el programa!!")
-
-
-
-
-
-
+    while True:
+        try:
+            print("Bienvenido al programa donde vas a poder consultar distintas cosas acerca de tu semestre de la universidad en la UACH") 
+            print("A continuación se muestran las opciones a las que puede acceder: ")
+            print("Opción 1: Promedio de tus calificaciones de todo el semestre:")
+            print("Opción 2: Tus asistencias a clases durante el semestre")
+            print("Opción 3: Riesgo que tienes de ser dado de baja por tus No Acreditadas")
+            print("Opción 4: Cuánto te falta para aprobar el semestre, considerando la calificación mínima como 7")
+            print("Opción 5: Salir")
+            opcion = int(input("Digita la opción que deseas seleccionar hoy: "))
+            match opcion:
+                case 1:
+                    media()
+                    while True:  
+                        continuar = input("\n¡Deseas hacer algo más? (s/n): ").lower().strip()
+                        if continuar in ["s", "si", "n", "no"]:
+                            break  
+                        print("Por favor, ingresa 's' para continuar o 'n' para salir.")
+                    if continuar in ["n", "no"]:  
+                        print("Gracias por usar el programa!!!")
+                        break
+                case 2:
+                    main()
+                    while True:  
+                        continuar = input("\n¡Deseas hacer algo más? (s/n): ").lower().strip()
+                        if continuar in ["s", "si", "n", "no"]:
+                            break  
+                        print("Por favor, ingresa 's' para continuar o 'n' para salir.")
+                    if continuar in ["n", "no"]:  
+                        print("Gracias por usar el programa!!!")
+                        break
+                case 3:
+                    reprobadas()
+                    while True:  
+                        continuar = input("\n¡Deseas hacer algo más? (s/n): ").lower().strip()
+                        if continuar in ["s", "si", "n", "no"]:
+                            break  
+                        print("Por favor, ingresa 's' para continuar o 'n' para salir.")
+                    if continuar in ["n", "no"]:  
+                        print("Gracias por usar el programa!!!")
+                        break
+                case 4:
+                    tP()
+                    while True:  
+                        continuar = input("\n¡Deseas hacer algo más? (s/n): ").lower().strip()
+                        if continuar in ["s", "si", "n", "no"]:
+                            break  
+                        print("Por favor, ingresa 's' para continuar o 'n' para salir.")
+                    if continuar in ["n", "no"]:  
+                        print("Gracias por usar el programa!!!")
+                        break
+                case 5:
+                    while True:
+                        continuar = input("¿Estás seguro de que quieres salir????? (s/n): ").lower().strip()
+                        if continuar in ["s", "si", "n", "no"]:
+                            break
+                        print("Por favor, ingresa 's' para continuar o 'n' para salir.")
+                    if continuar in ["n", "no"]:
+                        print("Regresando al menú principal.")
+                        break
+                    elif continuar in ["s", "si"]:
+                        print("Gracias por usar el programa!!")
+                        break
+                case _:
+                    print("Seleccione una opción del 1 al 5 por favor")
+        except ValueError:
+            print("Por favor, ingresa un número válido.")
 
 if __name__=="__main__":
   menu()
