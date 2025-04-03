@@ -16,8 +16,8 @@ def tP():
             if  5<=califParcial<=10:
                 print("Tu calificación necesaria para aprobar es ",califParcial)
                 ciclo=False
-            elif 0<=califParcial<=4:
-                print("Tranquilo, puedes relajarte un poco \U0001F615 necesitas un", califParcial)
+            elif 0<=califParcial<=5:
+                print("Tranquilo, puedes relajarte un poco \U0001F60E necesitas un", califParcial)
             else:
                 print("Ve ahorrando para el extra \U0001F62D \U0001F62D \U0001F62D	")
                 ciclo=False
