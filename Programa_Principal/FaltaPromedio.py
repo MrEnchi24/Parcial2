@@ -5,6 +5,7 @@ def tP():
     calif=0
     califFinal=0
     P1=float(input("Ingresa tu primer calificación en base a 10: "))
+    
     P2=float(input("Ingresa tu segunda calificación en base a 10: "))
     calif=(P1*.3)+(P2*.3)
     califFinal=float(7-calif)

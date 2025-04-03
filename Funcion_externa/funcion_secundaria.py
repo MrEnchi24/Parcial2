@@ -3,7 +3,7 @@ def main():
     ciclo = True
     while ciclo == True:
 
-        horas = input('Ingrese el número de horas totales en el parcial de la materia que desea consultar: ')
+        horas = input('Ingrese el número de horas totales en el semestre de la materia que desea consultar: ')
         faltas = input('Ingrese el número de faltas: ')
         
         if not horas.isdigit() or not faltas.isdigit(): 
