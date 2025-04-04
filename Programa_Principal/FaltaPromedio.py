@@ -13,17 +13,20 @@ def tP():
             calif=(P1*.3)+(P2*.3)
             califFinal=float(7-calif)
             califParcial=float(califFinal/.4) 
-            if  5<=califParcial<=10:
-                print("Tu calificación necesaria para aprobar es ",califParcial)
-                ciclo=False
-            elif 0<=califParcial<=5:
-                print("Tranquilo, puedes relajarte un poco \U0001F60E necesitas un", califParcial)
+            if P1 > 10 or P1 < 0 or P2 > 10 or P2 < 0:
+                print('\n   \033[1mIngrese calificaciones de 0-10\033[0m\n')
             else:
-                print("Ve ahorrando para el extra \U0001F62D \U0001F62D \U0001F62D	")
-                ciclo=False
+                if  5<=califParcial<=10:
+                    print("Tu calificación necesaria para aprobar es ",califParcial)
+                    ciclo=False
+                elif 0<=califParcial<=5:
+                    print("\nTranquilo, puedes relajarte un poco \U0001F60E necesitas un", califParcial)
+                    ciclo=False
+                else:
+                    print("Ve ahorrando para el extra \U0001F62D \U0001F62D \U0001F62D	necesitas un ", califParcial)
+                    ciclo=False
         except ValueError:
-            print(" Digita un valor númerico")
-            ciclo=False
+            print("\n   \033[1mDigita un valor númerico\033[0m\n")
     
     #Calif es la calificacion de los dos parciales
     #Calif final es la calificacion final necesaria
