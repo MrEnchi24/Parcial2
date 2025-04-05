@@ -32,24 +32,24 @@ def reprobadas():
                 break
         except ValueError:
             print("Por favor, ingresa un número válido.")
-    if semestre <= 2 and na == 0:
-        print("¡Excelente! Vas empezando y no tienes materias reprobadas.")
-    elif semestre <= 2 and 1 <= na <= 3:
+    if 2<=semestre <=4  and  1<=na<=3:
+        print("Presta más atención a tus clases, si no despúes vas a andar peligrando")
+    elif 2<=semestre <=4 and 1 <= na <= 3:
         print("Cuidado, estás empezando y ya tienes algunas materias reprobadas.")
-    elif semestre <= 2 and na > 3:
-        print("Es preocupante tener tantas materias reprobadas al inicio. ¡Habla con tu tutor!")
-    elif 3 <= semestre <= 5 and na == 0:
-        print("¡Muy bien! Vas a la mitad de la carrera y sin materias reprobadas.")
-    elif 3 <= semestre <= 5 and 1 <= na <= 4:
-        print("Vas a la mitad de la carrera, pero necesitas mejorar para evitar problemas.")
+    elif 4<semestre<=5 and 4<=na<=6:
+        print("Ve viendo como quitarte algunos NA, es peligroso tener algunos.")   #SON 8 NA HASTA 5 SEMESTRE
+    elif   semestre==5 and na == 7:
+        print("Hermanito, 1 NA más y te van a dar de baja definitiva, no permitas eso.")
+    elif  semestre == 5 and  na== 8:
+        print("Lo siento, pero es inevitable que te den de baja.")
     elif 3 <= semestre <= 5 and 5 <= na <= 7:
         print("No manches carnal, andas peligrando algo eh, ponle ganitas.")
     elif 3 <= semestre <= 5 and na > 7:
-        print("Tienes muchas materias reprobadas. Considera buscar ayuda académica.")
+        print("Tienes muchas materias reprobadas. Considera buscar ayuda académica.")  #10 NA HASTA SEXTO SEMESTRE
     elif 6 <= semestre <= 7 and na == 0:
         print("¡Felicidades! Estás por terminar y no tienes materias reprobadas.")
     elif 6 <= semestre <= 7 and 1 <= na <= 4:
-        print("Dale calma, pero tampoco te relajes mucho.")
+        print("Dale calma, pero tampoco te relajes mucho.") #11 NA HASTA 7 SEMESTRE
     elif 6 <= semestre <= 7 and 5 <= na <= 8:
         print("Ey ve cuidando tus N/A, no bajes la guardia.")
     elif 6 <= semestre <= 7 and 9 <= na <= 10:
@@ -63,7 +63,7 @@ def reprobadas():
     elif semestre >= 8 and 4 <= na <= 6:
         print("Cuidado, estás en la recta final y tienes varias materias reprobadas.")
     elif semestre >= 8 and na > 6:
-        print("Es preocupante tener tantas materias reprobadas al final. ¡Busca apoyo académico!")
+        print("Es preocupante tener tantas materias reprobadas al final, aguas.")
     else:
         print("No se pudo determinar un caso específico. Revisa tus datos.")
 def menu():
@@ -139,4 +139,3 @@ if __name__=="__main__":
   menu()
 
 
-  
