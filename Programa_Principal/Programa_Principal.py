@@ -126,7 +126,6 @@ def menu():
                         print("Por favor, ingresa 's' para continuar o 'n' para salir.")
                     if continuar in ["n", "no"]:
                         print("Regresando al menú principal.")
-                        break
                     elif continuar in ["s", "si"]:
                         print("Gracias por usar el programa!!")
                         break
