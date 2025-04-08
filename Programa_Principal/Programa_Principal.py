@@ -34,6 +34,8 @@ def reprobadas():
             print("Por favor, ingresa un número válido.")
     if 2<=semestre <=4  and  1<=na<=3:
         print("Presta más atención a tus clases, si no despúes vas a andar peligrando")
+    elif 1<=semestre>=2 and na==0:
+        print("Perfecto no tienes ni una reprobada al inicio!!")
     elif 2<=semestre <=4 and 1 <= na <= 3:
         print("Cuidado, estás empezando y ya tienes algunas materias reprobadas.")
     elif 4<semestre<=5 and 4<=na<=6:
@@ -46,15 +48,15 @@ def reprobadas():
         print("No manches carnal, andas peligrando algo eh, ponle ganitas.")
     elif 3 <= semestre <= 5 and na > 7:
         print("Tienes muchas materias reprobadas. Considera buscar ayuda académica.")  #10 NA HASTA SEXTO SEMESTRE
-    elif 6 <= semestre <= 7 and na == 0:
+    elif 5 <= semestre <= 7 and na == 0:
         print("¡Felicidades! Estás por terminar y no tienes materias reprobadas.")
-    elif 6 <= semestre <= 7 and 1 <= na <= 4:
+    elif 5 <= semestre <= 7 and 1 <= na <= 4:
         print("Dale calma, pero tampoco te relajes mucho.") #11 NA HASTA 7 SEMESTRE
-    elif 6 <= semestre <= 7 and 5 <= na <= 8:
+    elif 5 <= semestre <= 7 and 5 <= na <= 8:
         print("Ey ve cuidando tus N/A, no bajes la guardia.")
-    elif 6 <= semestre <= 7 and 9 <= na <= 10:
+    elif 5 <= semestre <= 7 and 9 <= na <= 10:
         print("Compa, ya ponle esfuerzo, estás peligrando bastante de ser dado de baja.")
-    elif 6 <= semestre <= 7 and na > 10:
+    elif 5 <= semestre <= 7 and na > 10:
         print("Tan cercas, le hubieras echado ganas compa.")
     elif semestre >= 8 and na == 0:
         print("¡Increíble! Estás por graduarte y no tienes materias reprobadas.")
